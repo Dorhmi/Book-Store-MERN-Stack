@@ -18,7 +18,7 @@ const CreateBook = () => {
         }
         axios.post('http://localhost:3001/books', data)
         .then((result)=> {
-            console.log(result);
+            console.log(result.data);
             navigate('/');
         })
         .catch((error) => {

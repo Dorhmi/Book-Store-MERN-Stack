@@ -140,3 +140,25 @@
     font-size: 20px;
     color: rgb(216, 98, 98);
 }
+
+.sinsle-container {
+    padding: 30px;
+}
+.single-content {
+    margin-top: 25px;
+    border: 2px solid #6991f7;
+    width: 650px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.book-info {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: rgb(82, 82, 82);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+.info {
+    margin-left: 10px;
+    color: black;
+}
