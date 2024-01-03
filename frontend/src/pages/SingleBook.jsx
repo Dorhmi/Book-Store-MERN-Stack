@@ -17,7 +17,6 @@ const SingleBook = () => {
             console.log(error);
         })
     }, [])
-    console.log(book);
 return (
     <section className='single-section'>
         <div className='sinsle-container'>

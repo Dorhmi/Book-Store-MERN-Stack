@@ -22,7 +22,6 @@ const Home = () => {
             setIsLoading(false)
         })
     }, [])
-    console.log(books);
 return (
     <section className='home-section'>
         <div className='home-container'>

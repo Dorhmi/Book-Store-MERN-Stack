@@ -85,6 +85,15 @@ app.get('/books/:id' , async (req , res) => {
     }
 })
 
+app.delete('/books/:id' , async (req , res) => {
+    try {
+        const {id} = req.params;
+        const book = await Book.findByIdAndDelete(id);
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send({ message : error.message})
+    }
+})
 
 mongoose.connect(URL)
 .then(()=> {
