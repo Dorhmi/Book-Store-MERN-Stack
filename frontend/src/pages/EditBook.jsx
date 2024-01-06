@@ -31,6 +31,9 @@ const EditBook = () => {
         }
         axios.put(`http://localhost:3001/books/${id}`, data)
         .then((result)=> {
+            // setTitle('');
+            // setAuthor('');
+            // setPublishYear('');
             console.log(result.data);
             navigate('/');
         })

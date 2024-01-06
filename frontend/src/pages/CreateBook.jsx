@@ -17,8 +17,7 @@ const CreateBook = () => {
             publishYear,
         }
         axios.post('http://localhost:3001/books', data)
-        .then((result)=> {
-            console.log(result.data);
+        .then(()=> {
             navigate('/');
         })
         .catch((error) => {

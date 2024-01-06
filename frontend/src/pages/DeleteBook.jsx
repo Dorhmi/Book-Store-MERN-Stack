@@ -11,7 +11,7 @@ const DeleteBook = () => {
     const handleDelete = () => {
         axios.delete(`http://localhost:3001/books/${id}`)
         .then(()=>{
-            navigate('/');
+            navigate('/')
         })
         .catch((error)=>{
             console.log(error);

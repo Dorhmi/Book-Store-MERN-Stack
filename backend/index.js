@@ -31,6 +31,7 @@ app.post('/books' , async (req , res) => {
             publishYear: req.body.publishYear,
         }
         const book = await Book.create(newBook)
+        return res.status(200).send()
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message: error.message})
@@ -55,6 +56,7 @@ app.put('/books/:id' , async (req , res) => {
         }
         const {id} = req.params;
         const book = await Book.findByIdAndUpdate(id , newBook)
+        return res.status(200).send()
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message: error.message})
@@ -89,6 +91,7 @@ app.delete('/books/:id' , async (req , res) => {
     try {
         const {id} = req.params;
         const book = await Book.findByIdAndDelete(id);
+        return res.status(200).send()
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message : error.message})
